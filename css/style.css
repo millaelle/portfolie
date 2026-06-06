@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "mootjungle", serif;
+}
+
+.theme-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.theme-nav a {
+  text-decoration: none;
+  color: #0d0d0d;
+  background-color: #e8b7c8;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 2px solid #b76f93;
+}
+
+body {
+  background-color: #eefbed;
+  color: #0d0d0d;
+  font-family: Georgia, serif;
+}
+
+/* HEADER */
+header {
+  position: relative;
+  z-index: 999;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: #f4b9d4;
+  background-color: #f4b9d4;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.burger.burger {
+  background: #f5dfe6;
+}
+
+header {
+  background-color: #c8f7ba;
+  text-align: center;
+  padding: 8px 5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #0d0d0d;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #b76f93;
+}
+
+.titel {
+  font-family: "mootjungle", serif;
+  color: #b76f93;
+}
+
+h1 {
+  font-family: "mootjungle", serif;
+  color: #b76f93;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "chlorophyll", serif;
+}
+
+h3 {
+  font-family: "mootjungle", serif;
+}
+
+li {
+  font-family: "volkhorn", serif;
+}
+
+.navMenu {
+  font-family: "chlorophyll", serif;
+}
+
+/* SLIDER */
+
+@media (max-width: 700px) {
+  .slider {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .slider-main {
+    width: 100%;
+  }
+
+  #mainImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .slider-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+
+  .thumbnails {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .thumb {
+    width: 65px;
+    height: 50px;
+  }
+}
+
+footer {
+  background-image: url("/img/portfolie\ footer.webp");
+  background-size: 100% auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  min-height: 180px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.footer-content {
+  max-width: 500px;
+  text-align: left;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@font-face {
+  font-family: "chlorophyll";
+  src: url(/fonts/chlorophyll.regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "mootjungle";
+  src: url(/fonts/moot-jungle-free-version.regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "volkhorn";
+  src: url(/fonts/Vollkorn-VariableFont_wght.woff) format("woff");
+}
+
+a {
+  font-family: "chlorophyll", serif;
+}
+
+@media (max-width: 700px) {
+  header {
+    position: relative;
+    min-height: 80px;
+    padding: 1rem 5%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer {
+    min-height: 280px;
+    padding: 1.5rem;
+  }
+
+  .footer-content {
+    font-size: 0.9rem;
+  }
+
+  /* BURGER MENU */
+  .burger {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    transform: none;
+    z-index: 2000;
+
+    width: 45px;
+    height: 45px;
+
+    background: #f5dfe6;
+    border: 2px solid #0d0d0d;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  #navMenu {
+    position: absolute;
+    top: 90px;
+    left: 15px;
+
+    background: #f5dfe6;
+    border: 2px solid #b76f93;
+    border-radius: 20px;
+
+    padding: 1rem;
+    min-width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    box-shadow: 4px 4px 0 #6f4a5b;
+
+    /* skjult som standard */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  #navMenu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  #navMenu a {
+    text-decoration: none;
+    color: #0d0d0d;
+  }
+}

@@ -1,0 +1,116 @@
+.portfolio-intro {
+  padding: 90px 8% 40px;
+}
+
+.portfolio-intro h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.intro-grid p {
+  max-width: 430px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+  justify-self: center;
+}
+
+.project-grid {
+  padding: 40px 8% 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px 120px;
+  align-items: start;
+}
+
+.project-card {
+  text-decoration: none;
+  color: #0d0d0d;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.project-card h3 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 400;
+  margin-bottom: 0 0 10px 0;
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 430px;
+  transition: 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-card:hover h3 {
+  color: #b76f93;
+}
+
+.featured img {
+  max-width: 450px;
+}
+
+h1 {
+  font-family: "mootjungle", serif;
+  color: #b76f93;
+}
+
+.portfolier {
+  font-family: "mootjungle", serif;
+}
+
+p {
+  font-family: "volkhorn", serif;
+}
+
+h3 {
+  font-family: "chlorophyll", serif;
+  font-weight: bolder;
+}
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+  .portfolio-intro {
+    padding: 60px 7% 30px;
+  }
+
+  .portfolio-intro h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .intro-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .intro-grid p {
+    font-size: 1.1rem;
+  }
+
+  .project-grid {
+    padding: 40px 7% 100px;
+  }
+
+  .project-card img {
+    max-width: 330px;
+  }
+
+  .project-card h3 {
+    font-size: 1.8rem;
+  }
+}
