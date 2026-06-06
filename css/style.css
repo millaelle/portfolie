@@ -146,7 +146,7 @@ li {
 }
 
 footer {
-  background-image: url("/img/portfolie\ footer.webp");
+  background-image: url("../img/footer.webp");
   background-size: 100% auto;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -168,17 +168,17 @@ footer {
 
 @font-face {
   font-family: "chlorophyll";
-  src: url(/fonts/chlorophyll.regular.woff) format("woff");
+  src: url(../fonts/chlorophyll.regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "mootjungle";
-  src: url(/fonts/moot-jungle-free-version.regular.woff) format("woff");
+  src: url(../fonts/moot-jungle-free-version.regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "volkhorn";
-  src: url(/fonts/Vollkorn-VariableFont_wght.woff) format("woff");
+  src: url(../fonts/Vollkorn-VariableFont_wght.woff) format("woff");
 }
 
 a {
