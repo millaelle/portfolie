@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mine Projekter</title>
+    <title>Om Mig</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/forside.css" />
+    <link rel="stylesheet" href="css/ommig.css" />
+    <link rel="icon" href="favicon/favicon.ico" />
   </head>
   <body>
     <header>
-      <h1>Millas Portfolio</h1>
+      <h1 class="titel">
+        <a class="titel-link" href="index.html">Millas Portfolio</a>
+      </h1>
 
       <button class="burger" id="burger" type="button">✿</button>
 
@@ -19,7 +22,60 @@
         <a href="ommig.html">☼ Om Mig</a>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="about-intro">
+        <h2>Om Mig</h2>
+
+        <div class="about-text">
+          <h3>Hvorfor Multimediedesign?</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="about-image">
+          <img src="img/migpink.webp" alt="Portræt af Milla" />
+        </div>
+      </section>
+
+      <section class="learning-section">
+        <h2>Hvad har jeg lært?</h2>
+
+        <div class="learning-path">
+          <div class="learn-box box-html">
+            <h3>HTML og struktur</h3>
+            <p>Jeg lærte at opbygge sider med semantisk HTML og skabe en tydelig struktur.</p>
+          </div>
+
+          <div class="learn-box box-css">
+            <h3>CSS og design</h3>
+            <p>Jeg lærte at arbejde med layout, farver, typografi, flexbox, grid og responsive design.</p>
+          </div>
+
+          <div class="learn-box box-figma">
+            <h3>Figma og wireframes</h3>
+            <p>Jeg lærte at planlægge design før kodning og bruge wireframes til at skabe overblik.</p>
+          </div>
+
+          <div class="learn-box box-js">
+            <h3>JS og interaktion</h3>
+            <p>Jeg lærte at tilføje små interaktioner som burger-menu, sliders og klikbare elementer.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section">
+        <h2>Min erhvervserfaring</h2>
+
+        <div class="branch-image-wrapper">
+          <img src="img/helegren.webp" alt="" class="branch-full" />
+
+          <p class="job-text job-paradis">Paradis-is<br />2018-2018</p>
+          <p class="job-text job-bornehave">Børnehave<br />2022-2022</p>
+          <p class="job-text job-coop">Coop 365<br />2023-2024</p>
+          <p class="job-text job-jumpyard">Jumpyard<br />2024-</p>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer-content">
         <p>© Milla Ellegaard<br />2026</p>

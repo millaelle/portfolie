@@ -58,3 +58,13 @@ if (mainImage && thumbnails.length > 0) {
     showImage(currentImage);
   });
 }
+
+// OM MIG - LEARNED
+
+const learnBoxes = document.querySelectorAll(".learn-box");
+
+learnBoxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    box.classList.toggle("active");
+  });
+});

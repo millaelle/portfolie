@@ -78,6 +78,19 @@ nav a:hover {
   color: #b76f93;
 }
 
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 a:hover {
+  color: #b76f93;
+}
+
+.titel-link {
+  font-family: "mootjungle", serif;
+}
+
 h1 {
   font-family: "mootjungle", serif;
   color: #b76f93;
@@ -99,6 +112,35 @@ li {
 
 .navMenu {
   font-family: "chlorophyll", serif;
+}
+
+.project-button {
+  display: inline-block;
+
+  padding: 14px 32px;
+
+  background-color: #f5dfe6;
+  color: #0d0d0d;
+
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-align: center;
+
+  border: 3px solid #d49ab3;
+  border-radius: 30px;
+
+  box-shadow: 4px 4px 0 #7d5b6c;
+
+  transition: 0.3s ease;
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+  background-color: #efd4dd;
+}
+
+.project-button {
+  font-family: "mootjungle", serif;
 }
 
 /* SLIDER */
@@ -146,7 +188,7 @@ li {
 }
 
 footer {
-  background-image: url("../img/footer.webp");
+  background-image: url("../img/footerfikset.webp");
   background-size: 100% auto;
   background-position: bottom center;
   background-repeat: no-repeat;
