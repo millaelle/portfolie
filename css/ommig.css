@@ -187,6 +187,10 @@ p {
   font-family: "volkorn";
 }
 
+.job-text {
+  font-family: "chlorophyll";
+}
+
 /* tablet / mellem display */
 @media (max-width: 1400px) {
   .learning-path {

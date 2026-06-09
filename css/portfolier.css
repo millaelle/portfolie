@@ -41,7 +41,7 @@
 .project-card h3 {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 400;
-  margin-bottom: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .project-card img {
